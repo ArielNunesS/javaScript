@@ -1,0 +1,33 @@
+//informar:
+// nome
+// idade
+// peso
+// altura
+// profissão
+
+// Exibir Informações.
+
+// mostrar a idade em MESES, SEMANAS e DIAS
+// ano = 365 dias; mês = 30 dias; semana = 7 dias
+// if maior de idade "está liberado para tomar umas geladas"
+// else "sem gelada pra você"
+
+
+
+// calcular o IMC e informar a FAIXA dele (nível)
+// IMC = peso / (altura x altura)
+// peso = kg; altura = metros; resultado = kg/m2
+// Faixas:
+// Magreza = menor que 18,5kg/m2
+// Normal = entre 18,5 e 24,9kg/m2
+// Sobrepeso = entre 24,9 e 30kg/m2
+// Obesidade = maior que 30kg/m2
+
+ salárioFuturo = salárioAtual * inflação + salárioAtual
+        salárioAtual = salárioFuturo
+
+// a partir da idade descubra o ano de nascimento (ano atual 2023; conta usando apenas o ano)
+
+// exibir a idade do usuário em todos os anos que ele já viveu e informar a idade atual dele (usando FOR)
+
+// perguntar se o usuário deseja inserir novos dados ou finalizar (usando while/do while)
