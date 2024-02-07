@@ -6,7 +6,10 @@ let continuar = true
 let i = 0
 
     //  Criando Loop
-
+// inserir só um nome e buscar em todas as posições do array de nomes se existe um nome condizente
+   // caso o nome esteja errado, retornar ao início
+// caso esteja certo, pedir uma senha
+    //e buscar a mesma posição em que o nome esteve correto, no array de senhas
 do{
 let ação = prompt('Qual ação gostaria de realizar? \n Cadastrar (c) - Login (L) - Deletar (d) - Encerrar (e)')
 
