@@ -1,3 +1,9 @@
+let j;
+let hoteis = []       // arrays para salvar hoteis e reservas
+let reservas = []
+let pessoas = []
+let reservasNome = []
+
 class Hotel{        // criando classe hotel
     Id
     Nome
@@ -27,9 +33,14 @@ class Reserva{        // criando classe reserva
     }
 }
 
-let j;
-let hoteis = []       // arrays para salvar hoteis e reservas
-let reservas = []
+class Pessoa{
+  NomeResponsavel
+  ReservasPessoa = []
+
+  constructor(nomeResponsavel){
+    this.NomeResponsavel = nomeResponsavel
+  }
+  }
 
 function cadastrarHotel(id, nome, telefone){
     nome = prompt('Crie um nome para o hotel')
@@ -69,7 +80,7 @@ function cadastrarReserva(idReserva, idHotel, nomeResponsavel, diaEntrada, diaSa
       }
     }
     nomeResponsavel = prompt('Informe o nome do responsável pela reserva')
-
+    
   do{
     diaEntrada = prompt('Qual será a data de entrada da reserva? __/__ (dia/mês)')
     if (!/^\d{2}\/\d{2}$/.test(diaEntrada)) {             // definindo o formato para inserir a data
@@ -89,6 +100,15 @@ function cadastrarReserva(idReserva, idHotel, nomeResponsavel, diaEntrada, diaSa
     let reserva = new Reserva(idReserva, idHotel, nomeResponsavel, diaEntrada, diaSaida)
     reservas.push(reserva)
     hoteis[i].ReservasDoHotel.push(reserva)           // atribuindo reserva na array de reservas de seu hotel correspondente
+
+    let pessoaExistente = pessoas.find(pessoa => pessoa.NomeResponsavel === nomeResponsavel);
+    if(pessoaExistente){
+      pessoaExistente.ReservasPessoa.push(reserva)
+    } else{
+        let novaPessoa = new Pessoa(nomeResponsavel)
+        novaPessoa.ReservasPessoa.push(reserva)
+        pessoas.push(novaPessoa)
+    }
 }
 
 cadastrarHotel()
@@ -152,3 +172,16 @@ function exibirInfoReserva(){
 }
 
 exibirInfoReserva()
+
+function exibirInfoNome(buscarNome){
+  buscarNome = prompt('Insira seu nome')
+
+  let pessoaEncontrada = pessoas.find(pessoa => pessoa.NomeResponsavel === buscarNome)
+  if(pessoaEncontrada) {
+    console.log(pessoaEncontrada)
+  } else {
+    console.log('Pessoa não encontrada')
+  }
+}
+
+exibirInfoNome()
