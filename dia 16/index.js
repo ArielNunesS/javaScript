@@ -1,6 +1,7 @@
 // Criando arrays para salvar dados
 var nomes = []
 var senhas = []
+var i = 0
 var continuar = true    // variável para continuar ou parar loop
 
 function crud(){
@@ -12,7 +13,10 @@ while(continuar){
     case 'c':                   // cadastrando nome e senha inseridos nas respectivas arrays
         nomes.push = prompt('Cadastre seu nome de usuário')
         senhas.push = prompt('Crie uma senha')
-        break;
+            nomes.push = nome
+            senhas [i] = senha
+            i++
+            break;
 
     case 'l':
         login()     // chamando função de login
