@@ -8,12 +8,6 @@ fome = prompt('Você está com fome, sim ou não?')
 dinheiro = prompt('Você está com dinheiro?')
 restauranteAberto = prompt('Seu restaurante favorito está aberto?')
 
-
-
-
-
-
-
       if (fome === 'não' || dinheiro === 'não'){
             console.log('Hoje a janta será em casa');
 }
