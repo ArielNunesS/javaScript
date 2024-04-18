@@ -1,11 +1,11 @@
 // https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
+// Calcular quantos números positivos, negativos e iguais a 0 o array possui
 
 function plusMinus(arr) {
-    // Write your code here
-    let indice0 = 0
-    let indicePositivo = 0
-    let indiceNegativo = 0
-    let soma = 0
+    let indice0 = 0;
+    let indicePositivo = 0;
+    let indiceNegativo = 0;
+    let soma = 0;
     
     for(let i = 0; i <= arr.length -1;  i++){
         if(arr[i] === 0){
@@ -19,6 +19,6 @@ function plusMinus(arr) {
         }
         soma++
     }
-    console.log(indicePositivo / soma, '\n ', indiceNegativo / soma , '\n ', indice0 / soma )
+    console.log(indicePositivo / soma, '\n ', indiceNegativo / soma , '\n ', indice0 / soma );
     
 }
