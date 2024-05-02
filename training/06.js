@@ -3,12 +3,11 @@
 
 function breakingRecords(scores) {
     let numAtual;
-    let numInicial = scores[0];
+    let numInicial = scores[0];             // salvando numInicial como maior e menor recorde, para facilitar a comparação iterando o array
     let maiorRecorde = numInicial;
     let menorRecorde = numInicial;
     let int = [0, 0];
     
-
     for(let i = 1; i < scores.length; i++){
         numAtual = scores[i]
     

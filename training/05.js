@@ -20,4 +20,4 @@ function numerosEmComum(){
         return (novoArray);
 }
 
-console.log(numerosEmComum(array1, array2))
+console.log(numerosEmComum(array1, array2))     // verificando funcionamento do código
