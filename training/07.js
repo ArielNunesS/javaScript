@@ -74,21 +74,21 @@ do{
                 break;
             }
 
-    case "d":
-            let buscarNome2 = prompt("Digite seu nome de usuário")
-            let verifNome2 = arrUsuarios.find((usuário) => usuário.Nome === buscarNome2)
-            if(verifNome2){
-                let buscarSenha2 = prompt(`Insira sua senha, ${buscarNome2}`)
-                        if(buscarSenha2 == verifNome2.Senha){
-                            arrUsuarios.splice(verifNome2)
+            case "d":
+                let buscarNome2 = prompt("Digite seu nome de usuário")
+                let verifNome2 = arrUsuarios.find((usuário) => usuário.Nome === buscarNome2)
+                if(verifNome2){
+                    let buscarSenha2 = prompt(`Insira sua senha, ${buscarNome2}`)
+                            if(buscarSenha2 == verifNome2.Senha){
+                                arrUsuarios.splice(verifNome2)
+                }   else {
+                        alert("Senha incorreta")
+                        break;
+                    }
             }   else {
-                    alert("Senha incorreta")
+                    alert("Nome inserido não encontrado")
                     break;
-                }
-        }   else {
-                alert("Nome inserido não encontrado")
-                break;
-        }
+            }
 
     case "s":
         continuar = false;
