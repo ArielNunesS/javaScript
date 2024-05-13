@@ -60,17 +60,35 @@ do{
             if(verifNome1){
                 let buscarSenha1 = prompt(`Insira sua senha, ${buscarNome1}`)
                     if(buscarSenha1 == verifNome1.Senha){
-                        let novaSenha = prompt("Digite a sua nova senha")
-                        arrUsuarios.find(buscarNome1).Senha = novaSenha
+                        if(buscarSenha1 == verifNome1.Senha){
+                            let novaSenha = prompt("Digite a sua nova senha")
+                            verifNome1.Senha = novaSenha
+                        }
                             break;
                     }   else {
                         alert("Senha incorreta")
-                            break;
+                        break;
                     }
             }   else {
                 alert("Nome inserido não encontrado")
                 break;
             }
+
+    case "d":
+            let buscarNome2 = prompt("Digite seu nome de usuário")
+            let verifNome2 = arrUsuarios.find((usuário) => usuário.Nome === buscarNome2)
+            if(verifNome2){
+                let buscarSenha2 = prompt(`Insira sua senha, ${buscarNome2}`)
+                        if(buscarSenha2 == verifNome2.Senha){
+                            arrUsuarios.splice(verifNome2)
+            }   else {
+                    alert("Senha incorreta")
+                    break;
+                }
+        }   else {
+                alert("Nome inserido não encontrado")
+                break;
+        }
 
     case "s":
         continuar = false;
@@ -78,5 +96,3 @@ do{
         }
 
 } while(continuar);
-
-//          !/^\d{5}$/.test(id)
