@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training</title>
-    <script src="05.js"></script>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <h1 id="titulo"><strong>Sistema de Cadastro e Login</strong></h1>
+        <button id="botaoCadastro"><strong>Cadastro</strong></button>
+        <button id="botaoLogin"><strong>Login</strong></button>
     
+    <div id="formularioCadastro" style="display: none;">
+        <h1 id="titulo"><strong>Cadastro</strong></h1>
+                Nome: <input type="text" id="usernameCadastro"><br>
+                Email: <input type="email" id="emailCadastro"><br>
+                Senha: <input type="password" id="senhaCadastro"/> (min. 8 dígitos)<br>
+          <button id="confirmarCadastro"><strong>Confirmar Cadastro</strong></button>
+    </div>
+
+    <div id="formularioLogin" style="display: none;"> 
+        <h1 id="titulo"><strong>Login</strong></h1>
+                Email: <input type="email" id="emailLogin"><br>
+                Senha: <input type="password" id="senhaLogin"/><br>
+            <button id="confirmarLogin"><strong>Confirmar Login</strong></button>
+    </div>
+
+
+    <script src="08.js"></script>
+
+
 </body>
 </html>

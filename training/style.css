@@ -1,0 +1,36 @@
+#titulo {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#botaoCadastro {
+    cursor: pointer;
+    background-color: rgba(221, 179, 39, 3);
+    border: none;
+    padding: 15px 30px;
+    margin-top: 80px;
+    margin-left: 500px;
+    position: absolute;
+    font-size: 20px;
+    width: 150px;
+} #botaoCadastro:hover{
+    transform: scale(1.5, 1.5);
+    transform: transition 1s ease;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 2);
+}
+
+#botaoLogin {
+    cursor: pointer;
+    background-color: rgba(221, 179, 39, 3);
+    border: none;
+    padding: 15px 30px;
+    margin-top: 80px;
+    margin-left: 700px;
+    position: absolute;
+    font-size: 20px;
+    width: 150px;
+} #botaoLogin:hover{
+    transform: scale(1.5, 1.5);
+    transform: transition 1s ease;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0, 2);
+}
