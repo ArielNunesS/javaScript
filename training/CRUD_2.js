@@ -2,6 +2,8 @@ let arrNomes = [];
 let arrEmails = [];
 let arrSenhas = [];
 
+document.getElementById("listaInicio").style.position = "absolute";
+
 document.getElementById("botaoCadastro").addEventListener('click', function () {
     document.getElementById("formularioCadastro").style.display = "block";
     document.getElementById("formularioLogin").style.display = "none";
@@ -50,21 +52,21 @@ document.getElementById("confirmarLogin").addEventListener('click', function () 
 });
 
 var menuInicioHidden = true;
-function toggleMenuInicio() {
-    menuInicioHidden = !menuInicioHidden;
-    return menuInicioHidden;
-}
 
-document.getElementById("botaoInicio").addEventListener('click', function () {
+document.getElementById("botaoInicio").addEventListener('mouseenter', function () {
     menuInicioHidden = !menuInicioHidden;
-    console.log(menuInicioHidden);
-
-    
-if (menuInicioHidden == true) {
-    return document.getElementById("menuInicio").style.display = "none";
-} else {
-    return document.getElementById("menuInicio").style.display = "block";
-}
+    if (menuInicioHidden == true) {
+        document.getElementById("listaInicio").style.display = "none";
+    } else {
+        document.getElementById("listaInicio").style.display = "list-item";
+    }
 });
 
-console.log(menuInicioHidden);
+document.getElementById("botaoInicio").addEventListener('mouseleave', function () {
+    menuInicioHidden = !menuInicioHidden;
+    if (menuInicioHidden == true) {
+        document.getElementById("listaInicio").style.display = "none";
+    } else {
+        document.getElementById("listaInicio").style.display = "list-item";
+    }
+});

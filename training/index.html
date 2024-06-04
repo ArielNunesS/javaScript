@@ -9,12 +9,22 @@
 </head>
 <body>
 
-<div id="fundo-cabecalho">
-
+<div id="fundoCabecalho">
+<hr id="linhaCabecalho">
     <div id="cabecalho">
         <button id="botaoCadastro" class="botao"><strong>Cadastro</strong></button>
         <button id="botaoLogin" class="botao"><strong>Login</strong></button>
-        <button id="botaoInicio" class="botao"><strong>Início</strong></button>
+
+    <div id="containerMenuInicio">
+        <button id="botaoInicio" class="botao"><strong><span id="textoInicio">Início</span> <div id="seta"></div></strong></button>
+            <ul id="listaInicio"  style="display: none;">
+                <li><button> Item 1</button></li>
+                <li><button>Item 2</button></li>
+                <li><button>Item 3 menu</button></li>
+                <li><button>Item 4 menu inicio</button></li>
+            </ul>
+    </div>
+
     </div>
        
     <div id="formularioCadastro" style="display: none;">
@@ -43,14 +53,7 @@
             <button id="confirmarLogin"><strong>Confirmar Login</strong></button>
     </div>
 
-    <div id="menuInicio" style="display: none;">
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3 Menu</li>
-            <li>Item 4 Menu Inicio</li>
-        </ul>
-    </div>
+
 
 </div>
 

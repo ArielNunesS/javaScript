@@ -1,15 +1,15 @@
-#fundo-cabecalho {
-    position: fixed;
+#fundoCabecalho {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 280px;
+    height: 85px;
     background-color: cornflowerblue;
 }
 
-#cabecalho {
-    display: inline-flexbox;
+#linhaCabecalho {
+    margin-top: 85px;
 }
 
 #botaoCadastro {
@@ -20,6 +20,65 @@
 }
 #botaoInicio {
     margin-left: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    position: absolute;
+} #botaoInicio:hover {
+
+}
+#listaInicio {
+    animation-delay: 2s;
+}
+#containerMenuInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25%;
+}
+
+#textoInicio {
+    position: absolute;
+    left: 14px;
+    top: 22px;
+}
+
+#seta {
+    position: absolute;
+    color: white;
+    padding: 6px;
+    box-shadow: 2px -2px 0 1px #ffffff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    right: 12px;
+    top: 22px;
+    transform: rotate(-45deg);
+  }
+    #listaInicio {
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    position: absolute;
+    margin-bottom: 20px;
+    width: 150px;
+}   
+#listaInicio li {
+    border-bottom: 1px solid #ccc;
+}   
+#listaInicio li:last-child {
+    border-bottom: none;
+}   
+#listaInicio button {
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-size: 12px;
+    padding: 15px 15px;
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
 }
 
 #formularioCadastro {
@@ -27,13 +86,16 @@
     margin-top: 100px;
     margin-left: 50px;
 }
-
 #formularioLogin {
     position: absolute;
     margin-top: 100px;
     margin-left: 50px;
 }
 
+
+.labelCadastro {
+    font-family: sans-serif;
+}
 #tituloCadastro {
     margin-bottom: -25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -60,7 +122,7 @@
     cursor: pointer;
     border: none;
     padding: 15px, 15px;
-    margin-top: 45px;
+    margin-top: 10px;
     position: absolute;
     font-size: 15px;
     width: 90px;
@@ -90,8 +152,4 @@
 .botao:hover::after {
     opacity: 1;
     transform: scale(1,1);
-}
-
-.labelCadastro {
-    font-family: sans-serif;
 }
