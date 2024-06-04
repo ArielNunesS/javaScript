@@ -50,9 +50,6 @@ document.getElementById("confirmarLogin").addEventListener('click', function () 
         }
     }
 });
-
-var menuInicioHidden = true;
-
 document.getElementById("botaoInicio").addEventListener('mouseenter', function () {
     menuInicioHidden = !menuInicioHidden;
     if (menuInicioHidden == true) {
