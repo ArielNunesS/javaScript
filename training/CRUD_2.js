@@ -50,20 +50,14 @@ document.getElementById("confirmarLogin").addEventListener('click', function () 
         }
     }
 });
+
 document.getElementById("botaoInicio").addEventListener('mouseenter', function () {
-    menuInicioHidden = !menuInicioHidden;
-    if (menuInicioHidden == true) {
-        document.getElementById("listaInicio").style.display = "none";
-    } else {
-        document.getElementById("listaInicio").style.display = "list-item";
-    }
+    document.getElementById("listaInicio").style.display = "list-item";
+    setTimeout(() => {
+        document.getElementById("listaInicio").style.opacity = 1;
+    }, 10);
 });
 
 document.getElementById("botaoInicio").addEventListener('mouseleave', function () {
-    menuInicioHidden = !menuInicioHidden;
-    if (menuInicioHidden == true) {
-        document.getElementById("listaInicio").style.display = "none";
-    } else {
-        document.getElementById("listaInicio").style.display = "list-item";
-    }
+    document.getElementById("listaInicio").style.opacity = 0;
 });
